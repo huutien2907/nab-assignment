@@ -1,0 +1,14 @@
+const NOTIFICATION_DURATION = {
+  FAST: 7,
+  MEDIUM: 8,
+  SLOW: 9,
+};
+
+const APP_FORMAT = {
+  DATE: 'DD-MM-YYYY',
+  DAY_OF_WEEK: 'dddd',
+};
+
+const DEBOUNCE_TIME = 400;
+
+export { NOTIFICATION_DURATION, APP_FORMAT, DEBOUNCE_TIME };

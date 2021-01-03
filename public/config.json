@@ -1,0 +1,4 @@
+{
+    "DEVELOPMENT_CORS_CROSS": "https://cors-anywhere.herokuapp.com/",
+    "APPLICATION_API": "https://www.metaweather.com"
+}

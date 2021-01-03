@@ -1,0 +1,36 @@
+@import '../../../../variable.less';
+
+.ant-modal-content {
+  .detail-title {
+    display: flex;
+    justify-content: center;
+    .detail-image {
+      width: 25%;
+      background-position: left;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+    .detail-text {
+      width: 70%;
+    }
+  }
+  .detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 3;
+    div {
+      min-width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: @responsive-max-width) {
+  .ant-modal-content {
+    .detail-content {
+      div {
+        min-width: 100%;
+      }
+    }
+  }
+}

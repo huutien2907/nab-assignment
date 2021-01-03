@@ -1,0 +1,70 @@
+@import '../../../../variable.less';
+.ant-card {
+  width: 70%;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 10px;
+  max-width: 504px;
+  &:last-child {
+    margin-bottom: 24px;
+  }
+  .ant-card-body {
+    padding: 0;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    .weather-state-image {
+      width: 40%;
+      height: 124px;
+      padding: 12px 24px;
+      .weather-state-name {
+        margin-bottom: 12px;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+      }
+      .coverImage {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100%;
+      }
+    }
+    .temparatures {
+      width: 50%;
+      height: 124px;
+      display: flex;
+      flex-direction: column;
+      div {
+        padding-left: 12px;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: calc(100% / 3);
+        &.weather-state-name {
+          background-color: rgb(100, 100, 100);
+        }
+        &.min-temp {
+          background-color: blue;
+        }
+        &.max-temp {
+          background-color: red;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @responsive-max-width) {
+  .ant-card {
+    width: 90%;
+    margin: 24px;
+    .content {
+      width: 100%;
+    }
+  }
+}
